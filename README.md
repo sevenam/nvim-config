@@ -23,7 +23,13 @@ end
 vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({ -- https://github.com/folke/lazy.nvim
 "mbbill/undotree", -- https://github.com/mbbill/undotree
-"nvim-telescope/telescope.nvim" -- https://github.com/nvim-telescope/telescope.nvim
+"tpope/vim-fugitive", -- https://github.com/tpope/vim-fugitive
+"nvim-telescope/telescope.nvim", -- https://github.com/nvim-telescope/telescope.nvim
+
+"nvim-lua/plenary.nvim", -- dependency for telescope
+"nvim-treesitter/nvim-treesitter", --dependency for telescope
+"burntsushi/ripgrep", --dependency for telescope
+"sharkdp/fd", --dependency for telescope
 })
 ```
 
