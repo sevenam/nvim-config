@@ -22,7 +22,17 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
-"mbbill/undotree"
+"mbbill/undotree" -- https://github.com/mbbill/undotree
 })
+```
+
+## Undotree
+
+Ref: https://github.com/mbbill/undotree
+
+To toggle the Undotree:
+
+```bash
+:UndotreeToggle
 ```
 
