@@ -43,3 +43,15 @@ To toggle the Undotree:
 :UndotreeToggle
 ```
 
+## Fugitive
+
+Ref: https://github.com/tpope/vim-fugitive
+
+To toggle Fugitive:
+
+```bash
+:Git
+:Git status
+# etc
+```
+
