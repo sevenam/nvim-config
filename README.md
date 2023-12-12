@@ -29,13 +29,30 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({ -- https://github.com/folke/lazy.nvim
   "mbbill/undotree", -- https://github.com/mbbill/undotree
   "tpope/vim-fugitive", -- https://github.com/tpope/vim-fugitive
-  "nvim-telescope/telescope.nvim", -- https://github.com/nvim-telescope/telescope.nvim
-  "navarasu/onedark.nvim",
+  "navarasu/onedark.nvim", -- https://github.com/navarasu/onedark.nvim
+  "github/copilot.vim", -- https://github.com/github/copilot.vim
+  
+  -- lsp:
+  "VonHeikemen/lsp-zero.nvim", -- https://github.com/VonHeikemen/lsp-zero.nvim
+  "neovim/nvim-lspconfig",
+  "williamboman/mason.nvim",
+  "williamboman/mason-lspconfig.nvim",
 
-   "nvim-lua/plenary.nvim", -- dependency for telescope
-   "nvim-treesitter/nvim-treesitter", --dependency for telescope
-   "burntsushi/ripgrep", --dependency for telescope
-   "sharkdp/fd", --dependency for telescope
+  -- autocompletion:
+  "hrsh7th/nvim-cmp",
+  "hrsh7th/cmp-buffer",
+  "hrsh7th/cmp-path",
+  "saadparwaiz1/cmp_luasnip",
+  "hrsh7th/cmp-nvim-lsp",
+  "hrsh7th/cmp-nvim-lua",
+  "rafamadriz/friendly-snippets",
+
+  --telescope:
+  "nvim-telescope/telescope.nvim", -- https://github.com/nvim-telescope/telescope.nvim
+  "nvim-lua/plenary.nvim", -- dependency for telescope
+  "nvim-treesitter/nvim-treesitter", --dependency for telescope
+  "burntsushi/ripgrep", --dependency for telescope
+  "sharkdp/fd", --dependency for telescope
 })
 
 -- add onedark.nvim theme
