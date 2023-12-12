@@ -32,13 +32,13 @@ require("lazy").setup({ -- https://github.com/folke/lazy.nvim
   "navarasu/onedark.nvim", -- https://github.com/navarasu/onedark.nvim
   "github/copilot.vim", -- https://github.com/github/copilot.vim
   
-  -- lsp:
+  -- lsp and autocompletion:
   "VonHeikemen/lsp-zero.nvim", -- https://github.com/VonHeikemen/lsp-zero.nvim
-  "neovim/nvim-lspconfig",
-  "williamboman/mason.nvim",
-  "williamboman/mason-lspconfig.nvim",
-
-  -- autocompletion:
+  "neovim/nvim-lspconfig", -- https://github.com/neovim/nvim-lspconfig
+  "williamboman/mason.nvim", -- https://github.com/williamboman/mason.nvim
+  "williamboman/mason-lspconfig.nvim", -- https://github.com/williamboman/mason-lspconfig.nvim
+  "mfussenegger/nvim-lint",
+  "OmniSharp/omnisharp-vim",
   "hrsh7th/nvim-cmp",
   "hrsh7th/cmp-buffer",
   "hrsh7th/cmp-path",
@@ -60,7 +60,6 @@ require('onedark').setup {
   style = 'warmer'
 }
 require('onedark').load()
-
 ```
 
 ## Undotree
