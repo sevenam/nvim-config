@@ -1,6 +1,6 @@
-# nvim config
+# Neovim config
 
-## install lazy.nvim package manager + plugins
+## Install lazy.nvim package manager + plugins
 
 Ref: https://github.com/folke/lazy.nvim
 
@@ -10,6 +10,14 @@ ni c:\users\$env:USERNAME\appdata\local\nvim\init.lua
 nvim c:\users\$env:USERNAME\appdata\local\nvim\init.lua
 ```
 Then: add the content from init.lua in this repo.
+
+To start Lazy:
+
+```bash
+:Lazy
+```
+
+To use the menu options for update/sync/clean/etc use Shift + letter. E.g. Shift-U to update.
 
 ## Undotree
 
