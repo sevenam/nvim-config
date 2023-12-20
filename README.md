@@ -41,6 +41,8 @@ To open buffer explorer to switch between open files type:
 :BufExplorer
 ```
 
+To delete a buffer/close a file: type `d` in the buffer explorer
+
 ## Fugitive
 
 Ref: https://github.com/tpope/vim-fugitive
