@@ -17,6 +17,8 @@ require("lazy").setup({ -- https://github.com/folke/lazy.nvim
   "tpope/vim-fugitive", -- https://github.com/tpope/vim-fugitive
   "navarasu/onedark.nvim", -- https://github.com/navarasu/onedark.nvim
   "github/copilot.vim", -- https://github.com/github/copilot.vim
+  "preservim/nerdtree", -- https://github.com/preservim/nerdtree
+  "jlanzarotta/bufexplorer", -- https://github.com/jlanzarotta/bufexplorer
   
   -- lsp and autocompletion:
   "VonHeikemen/lsp-zero.nvim", -- https://github.com/VonHeikemen/lsp-zero.nvim
