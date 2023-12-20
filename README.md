@@ -21,6 +21,17 @@ To toggle the Undotree:
 :UndotreeToggle
 ```
 
+## Nerdtree
+
+Ref: https://github.com/preservim/nerdtree
+
+Toggle nerdtree:
+
+```bash
+:NERDTree .
+```
+Switching between nerdtree and code editor: CTRL + w + w
+
 ## Fugitive
 
 Ref: https://github.com/tpope/vim-fugitive
