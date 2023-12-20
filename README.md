@@ -32,6 +32,14 @@ Toggle nerdtree:
 ```
 Switching between nerdtree and code editor: CTRL-w w
 
+## BufferExplorer
+
+To open buffer explorer to switch between open files type:
+
+```bash
+\be
+```
+
 ## Fugitive
 
 Ref: https://github.com/tpope/vim-fugitive
