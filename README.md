@@ -19,6 +19,16 @@ To start Lazy:
 
 To use the menu options for update/sync/clean/etc use Shift + letter. E.g. Shift-U to update.
 
+## Telescope
+
+Ref: https://github.com/nvim-telescope/telescope.nvim
+
+To open and search for files (tab is available for auto-complete):
+
+```bash
+:Telescope find_files
+```
+
 ## Undotree
 
 Ref: https://github.com/mbbill/undotree
