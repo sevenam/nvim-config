@@ -26,6 +26,7 @@ Ref: https://github.com/nvim-telescope/telescope.nvim
 To open and search for files (tab is available for auto-complete):
 
 ```bash
+:Telescope fd
 :Telescope find_files
 ```
 
