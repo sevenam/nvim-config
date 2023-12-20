@@ -38,6 +38,7 @@ To open buffer explorer to switch between open files type:
 
 ```bash
 \be
+:BufExplorer
 ```
 
 ## Fugitive
