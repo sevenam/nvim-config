@@ -77,3 +77,11 @@ To toggle Fugitive:
 # etc
 ```
 
+## Markdown-Preview
+
+Ref: https://github.com/iamcco/markdown-preview.nvim
+
+To toggle Markdown-Preview:
+```
+:MarkdownPreview
+```
