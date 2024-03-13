@@ -19,7 +19,16 @@ require("lazy").setup({ -- https://github.com/folke/lazy.nvim
   "github/copilot.vim", -- https://github.com/github/copilot.vim
   "preservim/nerdtree", -- https://github.com/preservim/nerdtree
   "jlanzarotta/bufexplorer", -- https://github.com/jlanzarotta/bufexplorer
-  
+  {
+    "iamcco/markdown-preview.nvim",
+    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+    build = "cd app && npm install",
+    init = function()
+      vim.g.mkdp_filetypes = { "markdown" }
+    end,
+    ft = { "markdown" },
+  },
+
   -- lsp and autocompletion:
   "VonHeikemen/lsp-zero.nvim", -- https://github.com/VonHeikemen/lsp-zero.nvim
   "neovim/nvim-lspconfig", -- https://github.com/neovim/nvim-lspconfig
@@ -38,9 +47,10 @@ require("lazy").setup({ -- https://github.com/folke/lazy.nvim
   --telescope:
   "nvim-telescope/telescope.nvim", -- https://github.com/nvim-telescope/telescope.nvim
   "nvim-lua/plenary.nvim", -- dependency for telescope
-  "nvim-treesitter/nvim-treesitter", --dependency for telescope
   "burntsushi/ripgrep", --dependency for telescope
   "sharkdp/fd", --dependency for telescope
+  "nvim-treesitter/nvim-treesitter", --dependency for telescope
+  "nvim-tree/nvim-web-devicons", --dependency for telescope
 })
 
 -- add onedark.nvim theme
