@@ -20,7 +20,7 @@ require("lazy").setup({ -- https://github.com/folke/lazy.nvim
   "preservim/nerdtree", -- https://github.com/preservim/nerdtree
   "jlanzarotta/bufexplorer", -- https://github.com/jlanzarotta/bufexplorer
   {
-    "iamcco/markdown-preview.nvim",
+    "iamcco/markdown-preview.nvim", -- https://github.com/iamcco/markdown-preview.nvim
     cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
     build = "cd app && npm install",
     init = function()
