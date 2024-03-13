@@ -53,6 +53,8 @@ Switching between nerdtree and code editor: CTRL-w w
 
 ## BufferExplorer
 
+Ref: https://github.com/jlanzarotta/bufexplorer
+
 To open buffer explorer to switch between open files type:
 
 ```bash
@@ -61,6 +63,7 @@ To open buffer explorer to switch between open files type:
 ```
 
 To delete a buffer/close a file: type `d` in the buffer explorer
+
 
 ## Fugitive
 
