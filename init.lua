@@ -76,3 +76,7 @@ options.laststatus = 2 -- Always display the status line
 -- options.backspace = indent,eol,start -- Intuitive backspacing
 -- options.showcmd = true -- Display incomplete commands
 
+-- set the default dir if opening without files
+vim.api.nvim_exec([[
+  autocmd VimEnter * if !argc() | cd c:\users\johnbo\jottacloud\notes | endif
+]], false)
