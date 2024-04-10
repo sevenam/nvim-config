@@ -77,6 +77,7 @@ options.laststatus = 2 -- Always display the status line
 -- options.showcmd = true -- Display incomplete commands
 
 -- set the default dir if opening without files
+local username = vim.fn.expand('$USERNAME')
 vim.api.nvim_exec([[
-  autocmd VimEnter * if !argc() | cd c:\users\johnbo\jottacloud\notes | endif
+  autocmd VimEnter * if !argc() | cd C:/Users/]]..username..[[/jottacloud/notes | endif
 ]], false)
