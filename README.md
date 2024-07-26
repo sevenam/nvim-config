@@ -51,6 +51,18 @@ Toggle nerdtree:
 ```
 Switching between nerdtree and code editor: CTRL-w w
 
+## NvimTree
+
+Ref: https://github.com/nvim-tree/nvim-tree.lua
+
+Toggle nvimtree:
+
+```bash
+:NvimTreeToggle
+```
+
+Switching between nvimtree and code editor: CTRL-w + w
+
 ## BufferExplorer
 
 Ref: https://github.com/jlanzarotta/bufexplorer
