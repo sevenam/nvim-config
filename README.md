@@ -49,7 +49,7 @@ Toggle nerdtree:
 ```bash
 :NERDTree .
 ```
-Switching between nerdtree and code editor: CTRL-w w
+Switching between nerdtree and code editor: CTRL-w + w
 
 ## NvimTree
 
