@@ -63,7 +63,11 @@ require("lazy").setup({ -- https://github.com/folke/lazy.nvim
       "nvim-tree/nvim-web-devicons",
     },
     config = function()
-      require("nvim-tree").setup {}
+      require("nvim-tree").setup({
+        view = {
+          width = 40,
+      },
+    })
     end,
   }
 })
