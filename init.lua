@@ -44,13 +44,28 @@ require("lazy").setup({ -- https://github.com/folke/lazy.nvim
   "hrsh7th/cmp-nvim-lua",
   "rafamadriz/friendly-snippets",
 
-  --telescope:
+  -- telescope:
   "nvim-telescope/telescope.nvim", -- https://github.com/nvim-telescope/telescope.nvim
   "nvim-lua/plenary.nvim", -- dependency for telescope
   "burntsushi/ripgrep", --dependency for telescope
   "sharkdp/fd", --dependency for telescope
   "nvim-treesitter/nvim-treesitter", --dependency for telescope
   "nvim-tree/nvim-web-devicons", --dependency for telescope
+
+  -- nvim-tree
+  -- also requires nerd fontes for icons to work: https://www.nerdfonts.com/font-downloads
+  -- get the font: CaskaydiaMono (CascadiaMono)
+  {
+    "nvim-tree/nvim-tree.lua", -- https://github.com/nvim-tree/nvim-tree.lua
+    version = "*",
+    lazy = false,
+    dependencies = {
+      "nvim-tree/nvim-web-devicons",
+    },
+    config = function()
+      require("nvim-tree").setup {}
+    end,
+  }
 })
 
 -- add onedark.nvim theme
@@ -75,6 +90,14 @@ options.laststatus = 2 -- Always display the status line
 -- options.wildmenu = true -- Enhanced command line completion
 -- options.backspace = indent,eol,start -- Intuitive backspacing
 -- options.showcmd = true -- Display incomplete commands
+
+-- open nvimtree on startup/vimenter
+-- disabled for now as it was slow
+--vim.api.nvim_create_autocmd("VimEnter", {
+--  callback = function()
+--    require("nvim-tree.api").tree.open()
+--  end
+--})
 
 -- set the default dir if opening without files
 local username = vim.fn.expand('$USERNAME')
