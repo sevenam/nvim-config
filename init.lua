@@ -108,3 +108,15 @@ local username = vim.fn.expand('$USERNAME')
 vim.api.nvim_exec([[
   autocmd VimEnter * if !argc() | cd C:/Users/]]..username..[[/jottacloud/notes | endif
 ]], false)
+
+-- set the shell to powershell on windows
+if vim.fn.has('win32') == 1 then
+  -- Set shell to PowerShell
+  vim.opt.shell = 'pwsh'  -- Use 'powershell' if you are using Windows PowerShell instead of PowerShell Core
+  vim.opt.shellcmdflag = '-NoLogo -ExecutionPolicy RemoteSigned -Command ". $PROFILE; "'
+  vim.opt.shellquote = ''
+  vim.opt.shellxquote = ''
+end
+
+-- set keybindings
+vim.keymap.set("i", "<C-BS>", "<C-w>", {silent = true, desc = 'delete whole word in insert mode'})
