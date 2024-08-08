@@ -44,6 +44,17 @@ require("lazy").setup({ -- https://github.com/folke/lazy.nvim
   "hrsh7th/cmp-nvim-lua",
   "rafamadriz/friendly-snippets",
 
+  -- toggleterm:
+  {
+    'akinsho/toggleterm.nvim', -- https://github.com/akinsho/toggleterm.nvim
+    version = "*",  
+    config = function()
+      require('toggleterm').setup{
+        shell = 'pwsh.exe'
+    }
+    end
+  },
+
   -- dropbar:
   {
     "Bekaboo/dropbar.nvim", -- https://github.com/Bekaboo/dropbar.nvim
