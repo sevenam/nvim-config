@@ -97,3 +97,7 @@ To toggle Markdown-Preview:
 ```
 :MarkdownPreview
 ```
+
+## Dropbar
+
+Ref: https://github.com/Bekaboo/dropbar.nvim
