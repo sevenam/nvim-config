@@ -94,10 +94,20 @@ To toggle Fugitive:
 Ref: https://github.com/iamcco/markdown-preview.nvim
 
 To toggle Markdown-Preview:
-```
+```bash
 :MarkdownPreview
 ```
 
 ## Dropbar
 
 Ref: https://github.com/Bekaboo/dropbar.nvim
+
+## Toggleterm
+
+Ref: https://github.com/akinsho/toggleterm.nvim
+
+To toggle terminal:
+```bash
+:ToggleTerm
+```
+
