@@ -44,6 +44,12 @@ require("lazy").setup({ -- https://github.com/folke/lazy.nvim
   "hrsh7th/cmp-nvim-lua",
   "rafamadriz/friendly-snippets",
 
+  -- dropbar:
+  {
+    "Bekaboo/dropbar.nvim", -- https://github.com/Bekaboo/dropbar.nvim
+    dependencies = { 'nvim-telescope/telescope-fzf-native.nvim'}
+  },
+
   -- telescope:
   "nvim-telescope/telescope.nvim", -- https://github.com/nvim-telescope/telescope.nvim
   "nvim-lua/plenary.nvim", -- dependency for telescope
