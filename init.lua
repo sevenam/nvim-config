@@ -66,8 +66,21 @@ require("lazy").setup({ -- https://github.com/folke/lazy.nvim
   "nvim-lua/plenary.nvim", -- dependency for telescope
   "burntsushi/ripgrep", --dependency for telescope
   "sharkdp/fd", --dependency for telescope
-  "nvim-treesitter/nvim-treesitter", --dependency for telescope
   "nvim-tree/nvim-web-devicons", --dependency for telescope
+
+  -- treesitter: 
+  {
+    "nvim-treesitter/nvim-treesitter", --dependency for telescope + code parsin
+    config = function()
+      require('nvim-treesitter.configs').setup({
+        ensure_installed = { "lua", "markdown", "c_sharp", "go", "git_config", "html", "json", "scss", "css", "javascript", "typescript", "python", "sql", "yaml", "xml" },
+        auto_install = true,
+        highlight = {
+          enable = true,
+        },
+      })
+      end,
+  },
 
   -- nvim-tree
   -- also requires nerd fontes for icons to work: https://www.nerdfonts.com/font-downloads
