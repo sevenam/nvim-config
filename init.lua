@@ -17,6 +17,7 @@ require("lazy").setup({ -- https://github.com/folke/lazy.nvim
   "tpope/vim-fugitive", -- https://github.com/tpope/vim-fugitive
   "navarasu/onedark.nvim", -- https://github.com/navarasu/onedark.nvim
   "github/copilot.vim", -- https://github.com/github/copilot.vim
+  "ryanoasis/vim-devicons", -- https://github.com/ryanoasis/vim-devicons
   "preservim/nerdtree", -- https://github.com/preservim/nerdtree
   "jlanzarotta/bufexplorer", -- https://github.com/jlanzarotta/bufexplorer
   {
