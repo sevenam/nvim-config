@@ -109,19 +109,21 @@ require('onedark').setup {
 }
 require('onedark').load()
 
-local options = vim.opt
-options.number = true
-options.showmode = true -- Display the mode you're in
-options.hidden = true -- Handle multiple buffers better
-options.ruler = true
-options.ignorecase = true -- Case-insensitive searching.
-options.incsearch = true -- Highlight matches as you type
-options.hlsearch = true -- Highlight matches
-options.visualbell = true -- No beeping
-options.tabstop = 2 -- Global tab width
-options.shiftwidth = 2 -- Global shift width
-options.expandtab = true -- Use spaces instead of tabs
-options.laststatus = 2 -- Always display the status line 
+
+vim.opt.number = true
+vim.opt.showmode = true -- Display the mode you're in
+vim.opt.hidden = true -- Handle multiple buffers better
+vim.opt.ruler = true
+vim.opt.ignorecase = true -- Case-insensitive searching.
+vim.opt.incsearch = true -- Highlight matches as you type
+vim.opt.hlsearch = true -- Highlight matches
+vim.opt.visualbell = true -- No beeping
+vim.opt.tabstop = 2 -- Global tab width
+vim.opt.shiftwidth = 2 -- Global shift width
+vim.opt.expandtab = true -- Use spaces instead of tabs
+vim.opt.laststatus = 2 -- Always display the status line
+vim.opt.mouse = 'a' -- Enable mouse support
+vim.opt.undofile = true -- Save undo history
 -- options.wildmenu = true -- Enhanced command line completion
 -- options.backspace = indent,eol,start -- Intuitive backspacing
 -- options.showcmd = true -- Display incomplete commands
