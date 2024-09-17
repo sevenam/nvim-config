@@ -111,3 +111,20 @@ To toggle terminal:
 :ToggleTerm
 ```
 
+## Clipboard Image
+
+Ref: https://github.com/ekickx/clipboard-image.nvim
+
+Currently has a bug in health.lua (C:\Users\%username%\AppData\Local\nvim-data\lazy\clipboard-image.nvim\lua\clipboard-image\health.lua):
+
+```lua
+-- replace this line:
+local health = require "health"
+-- with this line:
+local health = vim.health or require "health"
+```
+
+```bash
+# copy image to clipboard and paste with
+:PasteImg
+```
