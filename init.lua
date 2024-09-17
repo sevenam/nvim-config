@@ -333,6 +333,7 @@ require("lazy").setup({
 	},
   
 	-- markdown-preview:
+	-- url: https://github.com/iamcco/markdown-preview.nvim
 	{
 		"iamcco/markdown-preview.nvim",
 		cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
@@ -343,6 +344,22 @@ require("lazy").setup({
 		ft = { "markdown" },
 	},
 
+	-- clipboard-image:
+	-- url: https://github.com/ekickx/clipboard-image.nvim
+	-- need to fix: C:\Users\%username%\AppData\Local\nvim-data\lazy\clipboard-image.nvim\lua\clipboard-image\health.lua
+	-- replace the line: local health = require "health"
+	-- with the line: local health = vim.health or require "health"
+	-- toggle with: :PasteImg
+	{
+		"ekickx/clipboard-image.nvim",
+		config = {
+			default = {
+				img_dir = ".",
+				img_dir_txt = ""
+			}
+		}
+	},
+	
 	-- NOTE: Plugins can specify dependencies.
 	--
 	-- The dependencies are proper plugin specifications as well - anything
