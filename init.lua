@@ -164,6 +164,9 @@ vim.opt.expandtab = true -- Use spaces instead of tabs
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
+-- Keymap to toggle terminal with CTRL+t
+vim.keymap.set("n", "<C-t>", ":ToggleTerm<CR>", { desc = "Toggle terminal" })
+
 -- Clear highlights on search when pressing <Esc> in normal mode
 --  See `:help hlsearch`
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
@@ -1040,4 +1043,3 @@ vim.api.nvim_exec([[
 --    require("nvim-tree.api").tree.open()
 --  end
 --})
-
