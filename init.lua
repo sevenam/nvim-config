@@ -334,7 +334,7 @@ require("lazy").setup({
 			})
 		end,
 	},
-  
+
 	-- markdown-preview:
 	-- url: https://github.com/iamcco/markdown-preview.nvim
 	{
@@ -358,11 +358,11 @@ require("lazy").setup({
 		config = {
 			default = {
 				img_dir = ".",
-				img_dir_txt = ""
-			}
-		}
+				img_dir_txt = "",
+			},
+		},
 	},
-	
+
 	-- NOTE: Plugins can specify dependencies.
 	--
 	-- The dependencies are proper plugin specifications as well - anything
@@ -1036,6 +1036,15 @@ vim.api.nvim_exec([[
   autocmd VimEnter * if !argc() | cd C:/Users/]] .. username .. [[/jottacloud/notes | endif
 ]], false)
 
+-- set powershell as default shell
+if vim.fn.has("win32") == 1 then
+	vim.opt.shell = "pwsh"
+	-- Configure shell options for PowerShell
+	vim.opt.shellcmdflag = "-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command"
+	vim.opt.shellquote = '"'
+	vim.opt.shellxquote = ""
+end
+
 -- open nvimtree on startup/vimenter
 -- disabled for now as it was slow
 --vim.api.nvim_create_autocmd("VimEnter", {
@@ -1043,3 +1052,4 @@ vim.api.nvim_exec([[
 --    require("nvim-tree.api").tree.open()
 --  end
 --})
+--
